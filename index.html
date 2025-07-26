@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visas &amp; Ciudadanías – Work &amp; Holiday | Ciudadanía Italiana y Española</title>
+    <!-- Google Fonts for our preferred typography -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CSS via CDN for utility‑first styling -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@^3/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom stylesheet for minor overrides -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    class="font-Inter text-gray-800 bg-white flex flex-col min-h-screen"
+  >
+    <!-- Header navigation -->
+    <header
+      class="bg-white border-b border-gray-200 fixed top-0 left-0 w-full z-50"
+    >
+      <div
+        class="container mx-auto px-4 py-4 flex items-center justify-between"
+      >
+        <a href="#" class="text-xl md:text-2xl font-extrabold text-blue-600"
+          >Visas<span class="text-gray-900">&amp;</span>Ciud</a
+        >
+        <nav class="hidden md:flex space-x-6 text-sm font-medium">
+          <a href="#servicios" class="hover:text-blue-600">Servicios</a>
+          <a href="#faq" class="hover:text-blue-600">FAQ</a>
+          <a href="#testimonios" class="hover:text-blue-600">Testimonios</a>
+          <a href="#contacto" class="hover:text-blue-600">Contacto</a>
+          <a
+            href="#pago"
+            class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-500"
+            >Pago</a
+          >
+        </nav>
+        <!-- Mobile menu button -->
+        <button
+          id="mobile-btn"
+          class="md:hidden text-gray-700 focus:outline-none"
+          aria-label="Abrir menú"
+        >
+          <!-- Simple hamburger icon -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+      <!-- Mobile menu items -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+        <nav class="flex flex-col space-y-2 p-4 text-sm font-medium">
+          <a href="#servicios" class="hover:text-blue-600">Servicios</a>
+          <a href="#faq" class="hover:text-blue-600">FAQ</a>
+          <a href="#testimonios" class="hover:text-blue-600">Testimonios</a>
+          <a href="#contacto" class="hover:text-blue-600">Contacto</a>
+          <a
+            href="#pago"
+            class="bg-blue-600 text-white px-3 py-2 rounded-md hover:bg-blue-500"
+            >Pago</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero section -->
+    <section
+      id="hero"
+      class="pt-24 md:pt-32 pb-16 px-4 text-center bg-gray-50"
+    >
+      <div class="max-w-3xl mx-auto">
+        <h1
+          class="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight"
+        >
+          ¿Querés vivir y trabajar en el exterior?
+          <br /><span class="text-blue-600"
+            >Nosotros te ayudamos a lograrlo.</span
+          >
+        </h1>
+        <p class="mt-6 text-lg md:text-xl text-gray-600">
+          Soñá, pero con pasaporte en mano.
+        </p>
+        <button
+          onclick="scrollToSection('#pago')"
+          class="mt-10 bg-blue-600 text-white px-8 py-3 rounded-md shadow hover:bg-blue-500 transition"
+        >
+          Empezar ahora
+        </button>
+      </div>
+    </section>
+
+    <!-- Services section -->
+    <section id="servicios" class="py-16 px-4">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-extrabold text-center mb-12">Nuestros servicios</h2>
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-8"
+        >
+          <div class="bg-white shadow rounded-lg p-6 flex flex-col">
+            <h3 class="text-xl font-bold mb-2 text-blue-600">
+              Visas Work &amp; Holiday
+            </h3>
+            <p class="text-gray-600 flex-grow">
+              Te acompañamos en cada paso para aplicar a visas Work &amp; Holiday y
+              maximizar tus posibilidades de aprobación.
+            </p>
+          </div>
+          <div class="bg-white shadow rounded-lg p-6 flex flex-col">
+            <h3 class="text-xl font-bold mb-2 text-blue-600">Ciudadanías</h3>
+            <p class="text-gray-600 flex-grow">
+              Gestionamos tu ciudadanía italiana o española: requisitos, trámites
+              y documentación desde cero.
+            </p>
+          </div>
+          <div class="bg-white shadow rounded-lg p-6 flex flex-col">
+            <h3 class="text-xl font-bold mb-2 text-blue-600">
+              Asesoramiento personalizado
+            </h3>
+            <p class="text-gray-600 flex-grow">
+              Nuestro equipo te ofrece acompañamiento uno a uno para resolver
+              dudas específicas y diseñar tu plan de viaje.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ section -->
+    <section id="faq" class="bg-gray-50 py-16 px-4">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-extrabold text-center mb-12">
+          Preguntas frecuentes
+        </h2>
+        <div class="max-w-2xl mx-auto space-y-4">
+          <!-- Using HTML <details> for accessible FAQs -->
+          <details class="bg-white border border-gray-200 rounded-md p-4">
+            <summary class="cursor-pointer font-medium text-blue-600">
+              ¿Qué es la visa Work &amp; Holiday?
+            </summary>
+            <p class="mt-2 text-gray-600">
+              La visa Work &amp; Holiday permite a jóvenes viajar y trabajar
+              temporalmente en determinados países. Los cupos y requisitos
+              varían según la nación.
+            </p>
+          </details>
+          <details class="bg-white border border-gray-200 rounded-md p-4">
+            <summary class="cursor-pointer font-medium text-blue-600">
+              ¿Cómo inicio el trámite de ciudadanía italiana?
+            </summary>
+            <p class="mt-2 text-gray-600">
+              Nuestro equipo revisará tu árbol genealógico y te guiará para
+              recopilar la documentación necesaria. Luego presentaremos tu
+              solicitud ante las autoridades competentes.
+            </p>
+          </details>
+          <details class="bg-white border border-gray-200 rounded-md p-4">
+            <summary class="cursor-pointer font-medium text-blue-600">
+              ¿Cuánto tiempo demora el proceso?
+            </summary>
+            <p class="mt-2 text-gray-600">
+              El tiempo de respuesta depende del consulado o la embajada. Te
+              informaremos de los plazos estimados según tu caso.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials section -->
+    <section id="testimonios" class="py-16 px-4">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-extrabold text-center mb-12">
+          Testimonios
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white shadow rounded-lg p-6 flex flex-col">
+            <p class="text-gray-600 mb-4 flex-grow">
+              “Gracias a la consultora conseguí mi visa y hoy vivo en Nueva
+              Zelanda. ¡Fue un antes y un después!”
+            </p>
+            <div class="flex items-center">
+              <div class="h-10 w-10 bg-gray-300 rounded-full"></div>
+              <div class="ml-3">
+                <p class="font-bold">Lucía G.</p>
+                <p class="text-sm text-gray-500">Visa Work &amp; Holiday</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white shadow rounded-lg p-6 flex flex-col">
+            <p class="text-gray-600 mb-4 flex-grow">
+              “Mi ciudadanía italiana estaba estancada. Con ellos pude obtenerla
+              rápido y sin dolores de cabeza.”
+            </p>
+            <div class="flex items-center">
+              <div class="h-10 w-10 bg-gray-300 rounded-full"></div>
+              <div class="ml-3">
+                <p class="font-bold">Diego M.</p>
+                <p class="text-sm text-gray-500">Ciudadanía italiana</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white shadow rounded-lg p-6 flex flex-col">
+            <p class="text-gray-600 mb-4 flex-grow">
+              “El asesoramiento personalizado me permitió planear mi viaje y
+              trabajar legalmente sin problemas.”
+            </p>
+            <div class="flex items-center">
+              <div class="h-10 w-10 bg-gray-300 rounded-full"></div>
+              <div class="ml-3">
+                <p class="font-bold">Valentina R.</p>
+                <p class="text-sm text-gray-500">Asesoramiento personalizado</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Payment section -->
+    <section id="pago" class="bg-gray-50 py-16 px-4">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-extrabold mb-6">
+          Accedé a nuestro contenido exclusivo
+        </h2>
+        <p class="text-gray-600 mb-8 max-w-xl mx-auto">
+          Comprá nuestra guía con información detallada sobre visas y
+          ciudadanías. Recibirás acceso a recursos premium y asesoramiento
+          exclusivo.
+        </p>
+        <button
+          id="payButton"
+          class="bg-blue-600 text-white px-8 py-4 rounded-md shadow hover:bg-blue-500 transition"
+        >
+          Comprar ahora
+        </button>
+        <!-- Exclusive content placeholder -->
+        <div
+          id="exclusiveContent"
+          class="mt-10 hidden bg-white border border-gray-200 p-6 rounded-md max-w-xl mx-auto"
+        >
+          <h3 class="text-2xl font-bold mb-4">Contenido exclusivo</h3>
+          <p class="text-gray-700">
+            ¡Gracias por tu compra! Aquí encontrarás el enlace a nuestra guía
+            exclusiva. Este contenido solo se muestra a quienes completaron el
+            pago.
+          </p>
+          <a
+            id="exclusiveLink"
+            href="#"
+            class="mt-4 inline-block text-blue-600 underline"
+            >Descargar guía</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact form section -->
+    <section id="contacto" class="py-16 px-4">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-extrabold text-center mb-12">
+          Contacto
+        </h2>
+        <form
+          id="contactForm"
+          class="max-w-lg mx-auto space-y-4 bg-white shadow p-6 rounded-md"
+        >
+          <div>
+            <label for="name" class="block mb-1 font-medium">Nombre</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              class="w-full border border-gray-300 rounded-md p-2"
+            />
+          </div>
+          <div>
+            <label for="email" class="block mb-1 font-medium">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="w-full border border-gray-300 rounded-md p-2"
+            />
+          </div>
+          <div>
+            <label for="message" class="block mb-1 font-medium"
+              >Mensaje</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              required
+              class="w-full border border-gray-300 rounded-md p-2"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-500 transition w-full"
+          >
+            Enviar mensaje
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-auto">
+      <div
+        class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0"
+      >
+        <p class="text-center md:text-left">
+          &copy; 2025 Visas &amp; Ciudadanías. Todos los derechos reservados.
+        </p>
+        <div class="flex space-x-4">
+          <a
+            href="#"
+            class="hover:text-blue-400 transition"
+            aria-label="Instagram"
+            >Instagram</a
+          >
+          <a
+            href="#"
+            class="hover:text-blue-400 transition"
+            aria-label="Facebook"
+            >Facebook</a
+          >
+          <a
+            href="#"
+            class="hover:text-blue-400 transition"
+            aria-label="WhatsApp"
+            >WhatsApp</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- External libraries: EmailJS & Stripe -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <!-- Main script file -->
+    <script src="script.js"></script>
+  </body>
+</html>

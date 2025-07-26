@@ -1,0 +1,47 @@
+/*
+  Custom styles to complement Tailwind CSS for the visas & ciudadanías landing page.
+  This file defines a few small overrides and enhancements that are easier to
+  express in plain CSS rather than as utility classes. Tailwind is still
+  responsible for the bulk of the styling.
+*/
+
+/* Ensure our chosen font is used consistently */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Style the summary element inside the FAQ <details> to remove the default
+   disclosure triangle on some browsers and replace it with a custom arrow. */
+details > summary {
+  list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Add a custom arrow icon to the summary using pseudo‑element */
+details[open] > summary::after,
+details:not([open]) > summary::after {
+  content: '';
+  float: right;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent currentColor currentColor;
+  transform-origin: center;
+  transition: transform 0.2s ease;
+}
+
+details[open] > summary::after {
+  transform: rotate(45deg);
+}
+
+details:not([open]) > summary::after {
+  transform: rotate(-45deg);
+}
+
+/* Add smooth scrolling behavior for anchor links */
+html {
+  scroll-behavior: smooth;
+}
